@@ -1,0 +1,16 @@
+{
+  "instructors": [
+    {
+      "id": "1",
+      "name": "tamara qweder",
+      "email": "tamara@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "adel qweder",
+      "email": "adel@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
