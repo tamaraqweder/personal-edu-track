@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/instructors";
+const API_URL = "http://localhost:3000/students";
 const Form = document.getElementById("loginForm");
 const Email=document.getElementById("email");
 const Pass=document.getElementById("password");
@@ -16,19 +16,19 @@ Form.addEventListener("submit", async function(event)
         }
 
         //وحوّلها من JSON إلى JavaScript،
-        const inst=await res.json();
+        const students=await res.json();
         
           //هذول الايميل والباس الي المستخدم دخلهم
         const email=Email.value.trim().toLowerCase();
 
         const password = Pass.value;
 
-        const instructor=inst.find(function(user){
+        const student=students.find(function(user){
 
                return user.email === email && user.password===password;  
         });
 
-        if (!instructor)
+        if (!student)
          {
             alert("Invalid email or password");
              return;
@@ -39,9 +39,9 @@ Form.addEventListener("submit", async function(event)
      //هذا اوبجكت مثل علبه بدي اخزن فيها معلومات تسجيل الدخول
      //الي تمت بنجاح 
           const sesstionData={
-              id: instructor.id,
-              name: instructor.name,
-            email: instructor.email,
+              id: student.id,
+              name: student.name,
+            email: student.email,
              loginTime: new Date().toISOString()
 
 

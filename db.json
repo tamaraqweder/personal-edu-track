@@ -1,16 +1,26 @@
 {
-  "instructors": [
+  "students": [
     {
       "id": "1",
-      "name": "tamara qweder",
+      "name": "Tamara Qweder",
       "email": "tamara@gmail.com",
+      "studentId": "ST001",
       "password": "123456"
     },
     {
       "id": "2",
-      "name": "adel qweder",
+      "name": "Adel Qweder",
       "email": "adel@gmail.com",
+      "studentId": "ST002",
       "password": "123456"
+    },
+    {
+      "name": "omar",
+      "email": "omar@gmail.com",
+      "studentId": "ST003",
+      "password": "123456",
+      "id": "WAelUlVYaXI"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
